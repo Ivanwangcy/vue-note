@@ -1,0 +1,23 @@
+{
+  "name": "vue-note",
+  "version": "1.0.0",
+  "description": "Vue2.0 笔记应用",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ivanwangcy/vue-note.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ivanwangcy/vue-note/issues"
+  },
+  "homepage": "https://github.com/Ivanwangcy/vue-note#readme",
+  "dependencies": {
+    "vue": "^2.0.0-rc.8"
+  }
+}
