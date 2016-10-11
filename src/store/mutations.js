@@ -13,3 +13,13 @@ export const randomTitle = (state) => {
   let index = ~~(Math.random() * titles.length)
   state.msg = titles[index]
 }
+
+export const add_note = (state) => {
+  const newNote = {
+    text: "New Note",
+    favorite: false
+  }
+
+  state.notes.push(newNote);
+  state.activeNote = newNote;
+}
