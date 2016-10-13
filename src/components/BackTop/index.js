@@ -18,7 +18,6 @@ export default {
     },
     handleScroll() {
       const scroll = this.getScroll()
-      console.log(scroll, this.visibilityHeight);
 
       this.visible = scroll > this.visibilityHeight
     },
@@ -40,7 +39,7 @@ export default {
     }
     return (
       <div class="back-top" v-show={this.visible} {...data}>
-        <i class="fa fa-arrow-circle-up fa-4x"></i>
+        <i class="fa fa-arrow-circle-up fa-3x"></i>
       </div>
     )
   }

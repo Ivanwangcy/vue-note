@@ -1,5 +1,5 @@
-export const increment = ({ commit }) => commit('increment')
-export const randomTitle = ({ commit }) => commit('randomTitle')
+// export const increment = ({ commit }) => commit('increment')
+// export const randomTitle = ({ commit }) => commit('randomTitle')
 
 export const addNote = ({ commit }) => {
   commit('ADD_NOTE')

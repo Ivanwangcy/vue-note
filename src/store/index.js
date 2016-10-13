@@ -12,7 +12,7 @@ const state = {
   count: 0,
   notes: [],
   activeNote: {},
-  tileModel: true //// viewModel: 'TILE' // TILE/LIST
+  viewModel: 'large' //// viewModel: 'TILE' // list/large
 }
 const store = new Vuex.Store({
   state,

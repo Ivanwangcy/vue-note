@@ -1,18 +1,18 @@
-export const increment = (state) => {
-  state.count++;
-}
+// export const increment = (state) => {
+//   state.count++;
+// }
 
-let titles = [
-  "Welcome to your Vue.js app!",
-  "Hello Vue 2.0! ",
-  "Hello World! ",
-  "Hi JavaScript! ",
-  "Hi HTML5! "
-]
-export const randomTitle = (state) => {
-  let index = ~~(Math.random() * titles.length)
-  state.msg = titles[index]
-}
+// let titles = [
+//   "Welcome to your Vue.js app!",
+//   "Hello Vue 2.0! ",
+//   "Hello World! ",
+//   "Hi JavaScript! ",
+//   "Hi HTML5! "
+// ]
+// export const randomTitle = (state) => {
+//   let index = ~~(Math.random() * titles.length)
+//   state.msg = titles[index]
+// }
 
 export const ADD_NOTE = (state) => {
   const newNote = {
@@ -39,4 +39,8 @@ export const TOGGLE_FAVORITE = (state) => {
 
 export const SET_ACTIVE_NOTE = (state, note) => {
   state.activeNote = note;
+}
+
+export const CHANGE_VIEW_MODEL = (state) => {
+  state.viewModel == 'list' ? 'large' : 'list'
 }
