@@ -14,7 +14,7 @@ export const randomTitle = (state) => {
   state.msg = titles[index]
 }
 
-export const add_note = (state) => {
+export const ADD_NOTE = (state) => {
   const newNote = {
     text: "New Note",
     favorite: false
@@ -22,4 +22,21 @@ export const add_note = (state) => {
 
   state.notes.push(newNote);
   state.activeNote = newNote;
+}
+
+export const EDIT_NOTE = (state, text) => {
+  state.activeNote.text = text
+}
+
+export const ROMOVE_NOTE = (state) => {
+  state.notes.$remove(state.activeNote)
+  state.activeNote = state.notes[0]
+}
+
+export const TOGGLE_FAVORITE = (state) => {
+  state.activeNote.favorite = !state.activeNote.favorite
+}
+
+export const SET_ACTIVE_NOTE = (state, note) => {
+  state.activeNote = note;
 }

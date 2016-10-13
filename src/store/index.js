@@ -11,7 +11,8 @@ const state = {
   msg: "Welcome to your Vue.js app!",
   count: 0,
   notes: [],
-  activeNote: {}
+  activeNote: {},
+  tileModel: true //// viewModel: 'TILE' // TILE/LIST
 }
 const store = new Vuex.Store({
   state,
