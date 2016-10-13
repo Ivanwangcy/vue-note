@@ -4,15 +4,15 @@
       <router-view class="view"></router-view>
     </transition>
 
-    <nav-footer></nav-footer>
+    <back-top :visibilityHeight="480"></back-top>
   </div>
 </template>
 <script type="text/javascript">
-  import navFooter from './components/NavFooter.vue'
+  import BackTop from './components/BackTop'
 
   export default {
     components: {
-      navFooter
+      BackTop
     }
   }
 </script>
