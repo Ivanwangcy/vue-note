@@ -4,7 +4,7 @@ export default{
   render(h) {
     return (
       <div>
-        <textarea></textarea>
+        <textarea>content</textarea>
       </div>
     )
   }
