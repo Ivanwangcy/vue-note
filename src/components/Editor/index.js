@@ -1,6 +1,9 @@
 import Vue from 'vue'
 
-export default{
+export default {
+  data: {
+
+  },
   render(h) {
     return (
       <div>
